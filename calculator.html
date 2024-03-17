@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      /* Add CSS styles here */
+
+      body {
+        margin:160px;
+        background-color:bisque; 
+        font-family: Arial, sans-serif;
+      }
+      #calculator {
+        width: 300px; 
+        margin: 0 auto; 
+      }
+      #calculator input[type="text"] {
+        border:2px solid black;
+        margin-bottom: 9px;
+        width: 85%; 
+        text-align: right; 
+        padding: 12px; 
+        box-sizing: border-box; 
+      }
+      #calculator input[type="button"] {
+        border:2px solid black;
+        width: 20%; 
+        padding: 19px; 
+        box-sizing: border-box; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display">
+      <br>
+      <input type="button" value="1" onclick="display.value += '1'">
+      <input type="button" value="2" onclick="display.value += '2'">
+      <input type="button" value="3" onclick="display.value += '3'">
+      <input type="button" value="+" onclick="display.value += '+'">
+      <br>
+      <input type="button" value="4" onclick="display.value += '4'">
+      <input type="button" value="5" onclick="display.value += '5'">
+      <input type="button" value="6" onclick="display.value += '6'">
+      <input type="button" value="-" onclick="display.value += '-'">
+      <br>
+      <input type="button" value="7" onclick="display.value += '7'">
+      <input type="button" value="8" onclick="display.value += '8'">
+      <input type="button" value="9" onclick="display.value += '9'">
+      <input type="button" value="*" onclick="display.value  +=  '*'">
+      <br>
+      <input type="button" value="C" onclick="display.value = ''">
+      <input type="button" value="0" onclick="display.value += '0'">
+      <input type="button" value="=" onclick="display.value = eval(display.value)">
+      <input type="button" value="/" onclick="display.value += '/'">
+    </div>
+  </body>
+</html>
